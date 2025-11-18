@@ -1,16 +1,19 @@
 # praktikum_tugas_7
 
-A new Flutter project.
+## NAMA : TANSAH JUMENENG PRAYOGI
+## NIM : H1D020390
+## SHIFT : G -> F
 
-## Getting Started
+## FLOW APLIKASI
+- User membuka aplikasi, lalu diarahkan ke halaman Login.
+- User mengisi username & password, lalu aplikasi memvalidasi data.
+- Jika benar, aplikasi menyimpan status login ke Local Storage (SharedPreferences).
+- User diarahkan ke Dashboard, yang berisi Side Menu untuk navigasi.
+- User bisa memilih menu yang tersedia melalui Side Menu (misal: Home, Profile, Setting).
+- Jika aplikasi ditutup lalu dibuka lagi, sistem cek Local Storage untuk menentukan apakah user tetap login atau kembali ke halaman Login.
+- Saat user memilih Logout, aplikasi menghapus data login dari Local Storage dan kembali ke halaman Login.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## APLIAKSI SCREENSHOT
+<img width="640" height="1386" alt="tugas-7-login" src="https://github.com/user-attachments/assets/aa90ea03-d844-4b06-858a-f805020f2bbd" />
+<img width="640" height="1396" alt="tugas-7-homepage" src="https://github.com/user-attachments/assets/50acbae7-7d3e-4bd0-98bc-c4a539323930" />
+<img width="640" height="1386" alt="tugas-7-sidemenu" src="https://github.com/user-attachments/assets/f6eeb78b-2fe5-4ea2-8955-403c33940c77" />
