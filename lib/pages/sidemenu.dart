@@ -1,8 +1,16 @@
 import 'package:flutter/material.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 import '../routes/app_routes.dart';
 
 class SideMenu extends StatelessWidget {
   const SideMenu({super.key});
+
+  Future<void> logout(BuildContext context) async {
+    SharedPreferences prefs = await SharedPreferences.getInstance();
+    await prefs.remove("isLoggedIn");
+
+    Navigator.pushReplacementNamed(context, AppRoutes.login);
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -17,10 +25,9 @@ class SideMenu extends StatelessWidget {
               child: Text(
                 "Menu",
                 style: TextStyle(
-                  color: Colors.white,
-                  fontSize: 26,
-                  fontWeight: FontWeight.bold,
-                ),
+                    color: Colors.white,
+                    fontSize: 26,
+                    fontWeight: FontWeight.bold),
               ),
             ),
           ),
@@ -40,8 +47,8 @@ class SideMenu extends StatelessWidget {
           ListTile(
             leading: const Icon(Icons.logout),
             title: const Text("Logout"),
-            onTap: () => Navigator.pushReplacementNamed(context, AppRoutes.login),
-          )
+            onTap: () => logout(context),
+          ),
         ],
       ),
     );

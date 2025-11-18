@@ -13,7 +13,7 @@ class AboutPage extends StatelessWidget {
       drawer: const SideMenu(),
       body: const Center(
         child: Text(
-          "Aplikasi Praktikum Tugas 7\nMenggunakan Flutter + Routing",
+          "Aplikasi Praktikum Tugas 7\nFlutter + Routing + SharedPreferences",
           textAlign: TextAlign.center,
           style: TextStyle(fontSize: 20),
         ),

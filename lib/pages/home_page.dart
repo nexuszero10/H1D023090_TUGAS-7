@@ -13,7 +13,7 @@ class HomePage extends StatelessWidget {
       drawer: const SideMenu(),
       body: const Center(
         child: Text(
-          "Welcome to Home Page!",
+          "Selamat datang di Home!",
           style: TextStyle(fontSize: 22),
         ),
       ),
